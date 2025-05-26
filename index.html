@@ -3,68 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>App Universitaria - Tu ayuda en el transporte</title>
+  <title>A Tiempo - App Universitaria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f9f9f9;
+      background: #f4f8fb;
       color: #333;
     }
     header {
-      background-color: #004d7a;
+      background: linear-gradient(135deg, #004d7a, #0077b6);
       color: white;
-      padding: 2rem;
+      padding: 3rem 1rem;
       text-align: center;
     }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
     nav {
-      background: #003f63;
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
+      background-color: #023e8a;
+      flex-wrap: wrap;
+      gap: 1rem;
       padding: 1rem;
     }
     nav a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
     }
     section {
-      padding: 2rem;
       max-width: 900px;
-      margin: auto;
+      margin: 2rem auto;
+      padding: 1rem;
     }
     h2 {
-      color: #004d7a;
-    }
-    footer {
-      background-color: #003f63;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      color: #0077b6;
     }
     .card {
       background: white;
-      padding: 1rem;
-      border-radius: 8px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 1.5rem;
       margin-bottom: 1.5rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
+    footer {
+      background-color: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .icon {
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+    .center {
+      text-align: center;
+    }
+    img.mockup {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 1rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Bienvenid@ a la App Universitaria</h1>
-    <p>Tu guía para movilizarte mejor hacia la universidad</p>
+    <h1>A Tiempo</h1>
+    <p>La app que te ayuda a llegar puntual a clases usando el transporte público</p>
   </header>
 
   <nav>
@@ -78,59 +95,57 @@
   <section id="quienes">
     <h2>¿Quiénes somos?</h2>
     <div class="card">
-      <p>Somos un grupo de estudiantes y desarrolladores comprometidos con mejorar la experiencia de transporte de estudiantes universitarios en Chile. Nuestra app busca reducir los tiempos de traslado y entregar información útil en tiempo real.</p>
+      <p>Somos un equipo de estudiantes comprometidos con mejorar la experiencia de movilidad de quienes estudian lejos de sus centros académicos. Creamos esta aplicación para informar en tiempo real sobre rutas y horarios.</p>
+      <img src="https://via.placeholder.com/600x350?text=Captura+de+la+App" alt="Captura de la App" class="mockup">
     </div>
   </section>
 
   <section id="caracteristicas">
     <h2>Características de la App</h2>
-
     <div class="card">
-      <h3>Mapas y rutas en tiempo real</h3>
-      <p>Consulta mapas actualizados con rutas seguras y horarios de transporte público.</p>
+      <h3>🗺️ Mapas y rutas</h3>
+      <p>Visualiza el recorrido de tus buses en tiempo real y encuentra las mejores combinaciones según tu horario de clases.</p>
     </div>
-
     <div class="card">
-      <h3>Alertas de tráfico y retrasos</h3>
-      <p>Recibe notificaciones si hay demoras o interrupciones en tu trayecto habitual.</p>
+      <h3>⏰ Horarios y tiempos de llegada</h3>
+      <p>Consulta estimaciones actualizadas para que llegues siempre a tiempo, incluso si vives lejos.</p>
     </div>
-
     <div class="card">
-      <h3>Integración con tu universidad</h3>
-      <p>Conecta tus horarios de clase y recibe recomendaciones personalizadas para llegar a tiempo.</p>
+      <h3>🔔 Notificaciones inteligentes</h3>
+      <p>Recibe alertas cuando sea momento de salir para no perder tu transporte.</p>
     </div>
   </section>
 
   <section id="noticias">
-    <h2>Últimas noticias</h2>
+    <h2>Noticias y actualizaciones</h2>
     <div class="card">
-      <p><strong>[20 mayo 2025]</strong> Nueva alianza con Red Metropolitana de Movilidad para mejorar rutas universitarias.</p>
+      <p><strong>[Mayo 2025]</strong> Nueva versión con tutorial y alertas mejoradas. Disponible en App Store y Google Play.</p>
     </div>
     <div class="card">
-      <p><strong>[17 mayo 2025]</strong> Ya disponible la versión beta para iOS y Android. ¡Descárgala gratis!</p>
+      <p><strong>[Abril 2025]</strong> Se integran nuevas rutas de acercamiento en Puerto Montt y sectores aledaños.</p>
     </div>
   </section>
 
   <section id="faq">
     <h2>Preguntas frecuentes</h2>
     <div class="card">
-      <p><strong>¿La app tiene costo?</strong><br>No, es completamente gratuita para estudiantes.</p>
+      <p><strong>¿La app es gratuita?</strong><br>Sí, está pensada para estudiantes y no tiene ningún costo.</p>
     </div>
     <div class="card">
-      <p><strong>¿En qué ciudades está disponible?</strong><br>Actualmente en Santiago, Concepción y Valparaíso.</p>
+      <p><strong>¿Necesito internet para usarla?</strong><br>Sí, pero algunas funciones como horarios ya vistos pueden funcionar sin conexión.</p>
     </div>
   </section>
 
   <section id="contacto">
     <h2>Contáctanos</h2>
-    <div class="card">
+    <div class="card center">
       <p>¿Tienes dudas, sugerencias o quieres colaborar?</p>
-      <p>Escríbenos a: <a href="mailto:contacto@appuniversitaria.cl">contacto@appuniversitaria.cl</a></p>
+      <p>Escríbenos a: <a href="mailto:contacto@atiempo.cl">contacto@atiempo.cl</a></p>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 App Universitaria | Hecho por estudiantes, para estudiantes</p>
+    <p>© 2025 A Tiempo App | Hecho por estudiantes de Puerto Montt</p>
   </footer>
 
 </body>

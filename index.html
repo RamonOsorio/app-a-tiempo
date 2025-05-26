@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>App Universitaria - Tu ayuda en el transporte</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #004d7a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background: #003f63;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #004d7a;
+    }
+    footer {
+      background-color: #003f63;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenid@ a la App Universitaria</h1>
+    <p>Tu guía para movilizarte mejor hacia la universidad</p>
+  </header>
+
+  <nav>
+    <a href="#quienes">Quiénes somos</a>
+    <a href="#caracteristicas">Características</a>
+    <a href="#noticias">Noticias</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="quienes">
+    <h2>¿Quiénes somos?</h2>
+    <div class="card">
+      <p>Somos un grupo de estudiantes y desarrolladores comprometidos con mejorar la experiencia de transporte de estudiantes universitarios en Chile. Nuestra app busca reducir los tiempos de traslado y entregar información útil en tiempo real.</p>
+    </div>
+  </section>
+
+  <section id="caracteristicas">
+    <h2>Características de la App</h2>
+
+    <div class="card">
+      <h3>Mapas y rutas en tiempo real</h3>
+      <p>Consulta mapas actualizados con rutas seguras y horarios de transporte público.</p>
+    </div>
+
+    <div class="card">
+      <h3>Alertas de tráfico y retrasos</h3>
+      <p>Recibe notificaciones si hay demoras o interrupciones en tu trayecto habitual.</p>
+    </div>
+
+    <div class="card">
+      <h3>Integración con tu universidad</h3>
+      <p>Conecta tus horarios de clase y recibe recomendaciones personalizadas para llegar a tiempo.</p>
+    </div>
+  </section>
+
+  <section id="noticias">
+    <h2>Últimas noticias</h2>
+    <div class="card">
+      <p><strong>[20 mayo 2025]</strong> Nueva alianza con Red Metropolitana de Movilidad para mejorar rutas universitarias.</p>
+    </div>
+    <div class="card">
+      <p><strong>[17 mayo 2025]</strong> Ya disponible la versión beta para iOS y Android. ¡Descárgala gratis!</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Preguntas frecuentes</h2>
+    <div class="card">
+      <p><strong>¿La app tiene costo?</strong><br>No, es completamente gratuita para estudiantes.</p>
+    </div>
+    <div class="card">
+      <p><strong>¿En qué ciudades está disponible?</strong><br>Actualmente en Santiago, Concepción y Valparaíso.</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <div class="card">
+      <p>¿Tienes dudas, sugerencias o quieres colaborar?</p>
+      <p>Escríbenos a: <a href="mailto:contacto@appuniversitaria.cl">contacto@appuniversitaria.cl</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 App Universitaria | Hecho por estudiantes, para estudiantes</p>
+  </footer>
+
+</body>
+</html>
